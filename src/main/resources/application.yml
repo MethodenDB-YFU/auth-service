@@ -1,6 +1,9 @@
 server:
-  port: 8888
-  contextPath: /api
+  contextPath: /auth
+    port: 9000
 security:
-  user:
-    password: password
+  basic:
+    enabled: false
+logging:
+  level:
+    org.springframework.security: DEBUG
